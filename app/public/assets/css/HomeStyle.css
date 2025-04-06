@@ -1,0 +1,115 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+}
+
+/* Container Padding */
+.container {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh; /* Reduced height for better fit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Hero Text Box */
+.hero-text {
+    background: rgba(0, 0, 0, 0.6); /* Darker background for better contrast */
+    padding: 30px 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.text-white {
+    color: white;
+}
+
+/* About Section */
+.about-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.about-intro {
+    max-width: 700px;
+    text-align: center;
+}
+.about-section img:hover {
+    transform: scale(1.03); 
+}
+
+.about-section p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* Services Section */
+.service-section {
+    padding: 50px 20px;
+}
+.services-intro {
+    max-width: 700px;
+    text-align: center;
+}
+.services-intro p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    text-align: center;
+}
+.services-divider {
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+    border: none;
+    opacity: 0.9;
+}
+.service-section h2,
+.service-section h3 {
+    text-align: center;
+    color: #333;
+}
+
+.service-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 40px 15px;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        padding: 20px 15px;
+        font-size: 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+}

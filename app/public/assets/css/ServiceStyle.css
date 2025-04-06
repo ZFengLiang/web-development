@@ -1,0 +1,51 @@
+.hero-services {
+    background-image: var(--hero-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 1.25rem;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group {
+    border-radius: 10px;
+}
+.scrollable-service-list {
+    background-color: #f8f9fa; /* light grey for visual testing */
+}
+.scrollable-service-list {
+    max-height: 400px;         
+    overflow-y: auto;          
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+
+/* Optional: Style the scrollbar */
+.scrollable-service-list::-webkit-scrollbar {
+    width: 6px;
+}
+.scrollable-service-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}

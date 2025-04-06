@@ -21,9 +21,13 @@ require_once(__DIR__ . "/lib/Route.php");
  * Require routes
  *  Defines the routes that our application will ned
  */
-//require_once(__DIR__ . "/routes/index.php");
-//require_once(__DIR__ . "/routes/user.php");
+require_once(__DIR__ . "/routes/index.php");
+require_once(__DIR__ . "/routes/dashboard.php");
 require_once(__DIR__ . "/routes/login.php");
+require_once(__DIR__ . "/routes/register.php");
+require_once(__DIR__ . "/routes/homepage.php");
+require_once(__DIR__ . "/routes/service.php");
+require_once(__DIR__ . "/routes/appointment.php");
 
 // Start the router, enabling handling requests
 Route::run();
